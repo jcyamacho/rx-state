@@ -1,11 +1,9 @@
 import React from 'react'
 import { Card } from 'antd'
 
-import { Drink } from 'services/cocktail'
-
 const { Meta } = Card
 
-interface Props {
+type Props = {
   value: Pick<Drink, 'name' | 'thumb'>
 }
 

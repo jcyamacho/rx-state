@@ -1,9 +1,9 @@
 import React from 'react'
 import { List } from 'antd'
-import CocktailCard from './CocktailCard'
-import { Drink } from 'services/cocktail'
 
-interface Props {
+import DrinkCard from './DrinkCard'
+
+type Props = {
   items: Drink[]
 }
 
@@ -24,7 +24,7 @@ const CocktailList: React.FC<Props> = ({ items }) => {
       dataSource={items}
       renderItem={(item) => (
         <List.Item>
-          <CocktailCard value={item} />
+          <DrinkCard value={item} />
         </List.Item>
       )}
     />
